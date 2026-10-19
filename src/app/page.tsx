@@ -5,6 +5,7 @@ import { ArrowRight, Sparkles, Flame, Zap, Heart, Compass, ShieldCheck, CheckCir
 import OrganicoUniverseVideo from '@/components/OrganicoUniverseVideo';
 import AnimatedMetrics from '@/components/AnimatedMetrics';
 import ExperienceCard from '@/components/ExperienceCard';
+import InstagramFeed from '@/components/InstagramFeed';
 import ContactForm from '@/components/ContactForm';
 import { EXPERIENCES } from '@/data/experiences';
 import { HOTEL_LOCATIONS } from '@/data/ecosystem';
@@ -382,7 +383,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. FORMULARIO DE CONTACTO INTEGRADO EN LA HOME */}
+      {/* 7. INSTAGRAM FEED PREVIEW (@otam_experiencias) */}
+      <InstagramFeed />
+
+      {/* 8. FORMULARIO DE CONTACTO INTEGRADO EN LA HOME */}
       <section id="cotizar" className="py-20 sm:py-28 bg-[#0C0D0E] relative border-t border-white/[0.06]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <ContactForm
