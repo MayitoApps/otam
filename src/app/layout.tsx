@@ -55,9 +55,19 @@ export const metadata: Metadata = {
   creator: 'OTAM',
   publisher: 'OTAM',
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
     shortcut: '/favicon.ico',
-    apple: '/images/otam-blanco.png',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
+  appleWebApp: {
+    title: 'OTAM',
   },
   formatDetection: {
     email: false,
