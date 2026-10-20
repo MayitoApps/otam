@@ -41,7 +41,7 @@ export default function OrganicoUniverseVideo() {
               <div 
                 className="absolute inset-0 bg-cover bg-center brightness-[0.6] transition-transform duration-700 group-hover:scale-105"
                 style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1600&q=85')`
+                  backgroundImage: `url('/images/sedes/ajusco.jpg')`
                 }}
               />
               

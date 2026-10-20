@@ -90,7 +90,7 @@ export const HOTEL_LOCATIONS: HotelLocation[] = [
     ],
     idealFor: ['Retiros de Alta Dirección', 'Iron Chef & Master Cooking', 'Convenciones Corporativas', 'Bodas de Bosque Alpino'],
     url: 'https://www.organicohotelboutique.com/',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/sedes/ajusco.jpg',
   },
   {
     id: 'valle-de-bravo',
@@ -120,7 +120,7 @@ export const HOTEL_LOCATIONS: HotelLocation[] = [
     ],
     idealFor: ['Rallys y Team Building Masivo', 'Convenciones Anuales con Hospedaje', 'Catas Sommelière Casino', 'Workshops de Innovación'],
     url: 'https://www.organicohotelboutiquevalle.com/',
-    image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/sedes/valle.jpg',
   },
   {
     id: 'quinta-soledad',
@@ -152,7 +152,7 @@ export const HOTEL_LOCATIONS: HotelLocation[] = [
     ],
     idealFor: ['Lanzamientos de Producto VIP', 'Bodas y Celebraciones Patrimoniales', 'Cenas Clandestinas y Maridajes', 'Asambleas Corporativas'],
     url: 'https://www.centroculturalquintasoledad.com/',
-    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/sedes/quinta.jpg',
   },
   {
     id: 'frontera-49',
@@ -180,7 +180,7 @@ export const HOTEL_LOCATIONS: HotelLocation[] = [
     ],
     idealFor: ['Cócteles y Fiestas en Rooftop', 'Pop-Ups y Activaciones de Marca', 'Workshops y Hackathones', 'Cenas Clandestinas de Autor'],
     url: 'https://www.frontera49.com/',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/sedes/roma-norte.jpg',
   },
   {
     id: 'tepoztlan',
@@ -208,7 +208,7 @@ export const HOTEL_LOCATIONS: HotelLocation[] = [
     ],
     idealFor: ['Retiros de Liderazgo Consciente', 'Ceremonias de Fuego y Bienestar', 'Bodas Místicas y Espirituales', 'Dinámicas de Conexión de Equipo'],
     url: 'https://www.organicohotelboutiquevalle.com/',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/sedes/tepoz.jpg',
   },
   {
     id: 'veracruz',
@@ -235,6 +235,6 @@ export const HOTEL_LOCATIONS: HotelLocation[] = [
     ],
     idealFor: ['Retiros Costeros de Integración', 'Parrilladas y Fiestas en la Playa', 'Celebraciones Familiares y Aniversarios', 'Rallys de Supervivencia Playera'],
     url: 'https://mikipihotelboutique.com/lander',
-    image: 'https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/sedes/veracruz.jpg',
   },
 ];

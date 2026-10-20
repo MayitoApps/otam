@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { ExternalLink, MapPin, CheckCircle2, Sparkles, ArrowRight, Compass, Users, MessageCircle, Building2, Crown } from 'lucide-react';
+import { ExternalLink, MapPin, CheckCircle2, Sparkles, ArrowRight, Compass, Users, MessageCircle, Building2, Crown, Truck } from 'lucide-react';
 import { HOTEL_LOCATIONS, GRUPO_ORGANICO_INFO } from '@/data/ecosystem';
 import ContactForm from '@/components/ContactForm';
 
@@ -240,8 +240,42 @@ export default function SedesPage() {
         </div>
       </section>
 
+      {/* Banner: ¿Tienes tu propio espacio? */}
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 py-6">
+        <div className="bg-gradient-to-r from-orange/20 via-[#18191c] to-surface border-2 border-orange/40 rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="flex items-start gap-4">
+            <div className="w-14 h-14 rounded-2xl bg-orange text-white flex items-center justify-center shrink-0 shadow-orange-glow">
+              <Truck className="w-7 h-7 text-white" />
+            </div>
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange/20 text-orange text-xs uppercase tracking-wider font-extrabold mb-2">
+                <span>OTAM On Tour</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-display font-black text-white uppercase tracking-tight mb-1">
+                ¿Prefieres tu evento en tus oficinas o jardín privado?
+              </h3>
+              <p className="text-muted text-sm max-w-xl">
+                Llevamos cualquiera de nuestras experiencias gastronómicas, rallys y dinámicas a tu propio espacio en cualquier estado de México. Montaje llave en mano y cero complicaciones.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href={`https://wa.me/525514615826?text=${encodeURIComponent(
+              'Hola OTAM, me interesa cotizar una experiencia en nuestras oficinas / locación propia. ¿Me podrían compartir opciones y dinámicas móviles?'
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 bg-gradient-to-r from-orange to-orange-dark text-white font-black text-xs uppercase tracking-wider py-4 px-8 rounded-2xl shadow-orange-glow hover:scale-105 transition-all flex-shrink-0"
+          >
+            <MessageCircle className="w-4 h-4" />
+            <span>Cotizar en mi locación</span>
+          </a>
+        </div>
+      </section>
+
       {/* Formulario de contacto para sedes */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 pt-16">
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 pt-10">
         <ContactForm
           initialMotivo="Consulta General o Especial"
           title="¿NO SABES QUÉ SEDE ELEGIR?"

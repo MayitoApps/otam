@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Sparkles, Flame, Zap, Heart, Compass, ShieldCheck, CheckCircle2, MapPin, MessageCircle } from 'lucide-react';
+import { ArrowRight, Sparkles, Flame, Zap, Heart, Compass, ShieldCheck, CheckCircle2, MapPin, MessageCircle, Truck } from 'lucide-react';
 import OrganicoUniverseVideo from '@/components/OrganicoUniverseVideo';
 import AnimatedMetrics from '@/components/AnimatedMetrics';
 import ExperienceCard from '@/components/ExperienceCard';
@@ -42,8 +42,8 @@ export default function HomePage() {
           </h1>
 
           {/* Subtítulo dinámico y cercano */}
-          <p className="text-base sm:text-xl text-muted max-w-3xl leading-relaxed mb-10 font-normal">
-            Creamos el pretexto perfecto para que tu equipo o tus personas favoritas se desconecten del piloto automático, compitan amistosamente, cocinen como chefs estrella o se fundan en fogatas bajo las constelaciones.
+          <p className="text-base sm:text-xl text-muted max-w-3xl leading-relaxed mb-8 font-normal">
+            Creamos el pretexto perfecto para que tu equipo o tus personas favoritas se desconecten del piloto automático, compitan amistosamente, cocinen como chefs estrella o se fundan en fogatas bajo las constelaciones. <strong className="text-white font-bold">Vívelo en nuestras 6 sedes boutique o directo en tus oficinas y locación favorita en cualquier parte de México.</strong>
           </p>
 
           {/* Botones de Acción Naranjas */}
@@ -82,6 +82,10 @@ export default function HomePage() {
             <span className="inline-flex items-center gap-2 bg-surface/60 border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-white shadow-sm">
               <span>🔥</span>
               <span>Fogatadas Místicas & Bombones</span>
+            </span>
+            <span className="inline-flex items-center gap-2 bg-orange/15 border border-orange/40 px-4 py-2 rounded-xl text-xs font-extrabold text-orange shadow-sm">
+              <Truck className="w-4 h-4 text-orange" />
+              <span>Llevamos la experiencia a tu empresa o jardín</span>
             </span>
           </div>
 
@@ -378,6 +382,44 @@ export default function HomePage() {
             >
               VER TODAS LAS SEDES Y SUS ESPACIOS →
             </Link>
+          </div>
+
+          {/* BANNER DESTACADO: LLEVAMOS CUALQUIER EXPERIENCIA A DONDE EL CLIENTE LO NECESITE */}
+          <div className="mt-14 relative overflow-hidden rounded-3xl bg-gradient-to-r from-orange/20 via-[#18191c] to-surface border-2 border-orange/40 p-8 sm:p-10 shadow-2xl shadow-orange/10">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-orange/15 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />
+            
+            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <div className="w-16 h-16 rounded-2xl bg-orange text-white flex items-center justify-center shrink-0 shadow-orange-glow text-3xl">
+                  <Truck className="w-8 h-8 text-white" />
+                </div>
+                <div className="space-y-2">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange/20 border border-orange/30 text-orange text-[11px] uppercase tracking-wider font-extrabold">
+                    <span>OTAM On Tour · Producción a Domicilio</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-display font-black text-white uppercase tracking-tight">
+                    ¿Prefieres que vayamos a tus oficinas o locación privada?
+                  </h3>
+                  <p className="text-sm sm:text-base text-muted max-w-2xl leading-relaxed">
+                    ¡No estás limitado a nuestros hoteles! <strong className="text-white font-bold">Podemos llevar cualquiera de nuestras experiencias a donde tú lo necesites:</strong> tus oficinas corporativas, salón de eventos particular, jardín privado o cualquier estado de la República. Nosotros nos encargamos de todo: chefs, estaciones, facilitadores, dinámicas y montaje llave en mano.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
+                <a
+                  href={`https://wa.me/525514615826?text=${encodeURIComponent(
+                    'Hola OTAM, me gustaría cotizar una experiencia llevada a nuestras oficinas / locación propia. ¿Me podrían dar información de cómo funciona el montaje a domicilio?'
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-orange to-orange-dark text-white font-extrabold text-xs uppercase tracking-wider py-4 px-8 rounded-2xl shadow-orange-glow hover:scale-105 transition-all"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span>Cotizar a domicilio</span>
+                </a>
+              </div>
+            </div>
           </div>
 
         </div>
