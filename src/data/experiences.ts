@@ -68,7 +68,7 @@ export const EXPERIENCES: Experience[] = [
       'Trofeo y premiación al equipo vencedor'
     ],
     locations: ['OHB Ajusco', 'OHB Tepoztlán', 'OHB Valle de Bravo', 'Centro Cultural Quinta Soledad', 'Roma Norte'],
-    image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/experiences/iron-chef.jpg',
     featured: true,
     corporateRoi: 'Prueba de fuego para la delegación de roles, gestión de recursos escasos y resolución colectiva de imprevistos.'
   },
@@ -160,7 +160,7 @@ export const EXPERIENCES: Experience[] = [
       'Kit de mixología con shaker profesional para el equipo ganador'
     ],
     locations: ['OHB Ajusco', 'OHB Tepoztlán', 'OHB Valle de Bravo', 'Centro Cultural Quinta Soledad', 'Roma Norte'],
-    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/experiences/taller-mixologia.jpg',
     featured: false,
     corporateRoi: 'Excelente dinamizador para romper el hielo en convenciones anuales o cierres de trimestre.'
   },
@@ -183,7 +183,7 @@ export const EXPERIENCES: Experience[] = [
       'Constancia oficial de impacto social'
     ],
     locations: ['OHB Ajusco', 'OHB Tepoztlán', 'OHB Valle de Bravo', 'OHB Veracruz', 'Centro Cultural Quinta Soledad', 'Roma Norte'],
-    image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/experiences/rally-causa-social.jpg',
     featured: false,
     corporateRoi: 'Inyecta un propósito trascendente a la jornada laboral, generando cohesión ética irremplazable.'
   },
@@ -212,7 +212,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: 'taller-de-pizza',
     slug: 'taller-de-pizza',
-    title: 'Pizza Napolitana & Horno de Leña',
+    title: 'Taller de Pizza',
     subtitle: 'Manos a la masa, fuego vivo y tradición rústica',
     category: 'empresariales',
     categoryLabel: 'Taller Culinario',
@@ -228,13 +228,13 @@ export const EXPERIENCES: Experience[] = [
       'Bebidas para maridar y concurso de la mejor pizza'
     ],
     locations: ['OHB Ajusco', 'OHB Tepoztlán', 'OHB Valle de Bravo', 'Centro Cultural Quinta Soledad', 'Roma Norte'],
-    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/experiences/taller-de-pizza.jpg',
     featured: false
   },
   {
     id: 'rally-mundialista',
     slug: 'rally-mundialista',
-    title: 'Rally Deportivo de las Naciones',
+    title: 'Rally Deportivo de Naciones',
     subtitle: 'Pasión, estrategia y energía competitiva al máximo',
     category: 'empresariales',
     categoryLabel: 'Team Building Deportivo',
@@ -249,13 +249,13 @@ export const EXPERIENCES: Experience[] = [
       'Pistas musicales motivacionales y sonido profesional'
     ],
     locations: ['OHB Ajusco', 'OHB Tepoztlán', 'OHB Valle de Bravo', 'Centro Cultural Quinta Soledad'],
-    image: 'https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/experiences/rally-deportivo-naciones.jpg',
     featured: false
   },
   {
     id: 'taller-pinta-prendas',
     slug: 'taller-pinta-prendas',
-    title: 'Art Lab & Pinta de Prendas',
+    title: 'Pinta tu prenda',
     subtitle: 'Customización textil, autoexpresión y arte compartido',
     category: 'empresariales',
     categoryLabel: 'Creatividad & Arte',
@@ -270,7 +270,7 @@ export const EXPERIENCES: Experience[] = [
       'Área de secado y curaduría para galería final'
     ],
     locations: ['OHB Ajusco', 'OHB Tepoztlán', 'OHB Valle de Bravo', 'Centro Cultural Quinta Soledad', 'Roma Norte'],
-    image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/experiences/pinta-tu-prenda.jpg',
     featured: false
   },
 

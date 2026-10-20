@@ -18,12 +18,12 @@ interface InstagramPost {
 const INSTAGRAM_POSTS: InstagramPost[] = [
   {
     id: 'post-1',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
+    image: '/images/experiences/iron-chef.jpg',
     location: 'Valle de Bravo, Edo. Méx.',
     likes: 342,
     comments: 29,
     caption: '¡La cocina no miente! Cuando un equipo amasa, hornea y compite con tiempo límite en el reto Iron Chef, la complicidad se nota en cada rebanada. 🍕🔥 #IronChef #OTAMExperiencias',
-    tag: 'Iron Chef Pizza',
+    tag: 'Iron Chef Culinario',
     url: 'https://www.instagram.com/otam_experiencias/',
   },
   {
@@ -48,12 +48,12 @@ const INSTAGRAM_POSTS: InstagramPost[] = [
   },
   {
     id: 'post-4',
-    image: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=800&q=80',
+    image: '/images/experiences/rally-causa-social.jpg',
     location: 'Bosque Valle de Bravo',
     likes: 389,
     comments: 34,
-    caption: 'Superando retos en equipo: tirolesas, tiro con arco y dinámicas de confianza extrema en más de 6 hectáreas de bosque privado. 🏹🌲 #TeamBuilding #Liderazgo',
-    tag: 'Rally & Aventura',
+    caption: 'Superando retos en equipo con causa social: dinámicas de integración y armado de despensas en escenarios naturales inolvidables. 🤝🌲 #TeamBuilding #CausaSocial',
+    tag: 'Rally con Causa',
     url: 'https://www.instagram.com/otam_experiencias/',
   },
   {
