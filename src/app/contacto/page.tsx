@@ -135,10 +135,10 @@ export default function ContactoPage() {
               <div className="w-14 h-14 rounded-full bg-emerald-500/20 border-2 border-emerald-500/50 flex items-center justify-center mx-auto mb-3 p-3">
                 <div className="relative w-8 h-8">
                   <Image
-                    src="/images/whatsapp.png"
+                    src="/images/whatsapp-white.png"
                     alt="WhatsApp"
                     fill
-                    className="object-contain"
+                    className="object-contain brightness-0 invert"
                   />
                 </div>
               </div>

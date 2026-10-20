@@ -142,10 +142,10 @@ export default function ExperienceCard({ experience, onSelectForQuote }: Experie
         >
           <div className="relative w-4 h-4 flex-shrink-0">
             <Image
-              src="/images/whatsapp.png"
+              src="/images/whatsapp-white.png"
               alt="WhatsApp"
               fill
-              className="object-contain"
+              className="object-contain brightness-0 invert"
             />
           </div>
           <span>Reservar por WhatsApp</span>

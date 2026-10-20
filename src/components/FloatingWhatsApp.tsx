@@ -41,10 +41,11 @@ export default function FloatingWhatsApp() {
 
         <div className="relative w-8 h-8 sm:w-9 sm:h-9">
           <Image
-            src="/images/whatsapp.png"
+            src="/images/whatsapp-white.png"
             alt="WhatsApp"
             fill
-            className="object-contain drop-shadow"
+            priority
+            className="object-contain drop-shadow brightness-0 invert"
           />
         </div>
       </a>

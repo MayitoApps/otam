@@ -163,10 +163,10 @@ export default function ContactForm({
               >
                 <div className="relative w-5 h-5 flex-shrink-0">
                   <Image
-                    src="/images/whatsapp.png"
+                    src="/images/whatsapp-white.png"
                     alt="WhatsApp"
                     fill
-                    className="object-contain"
+                    className="object-contain brightness-0 invert"
                   />
                 </div>
                 <span>Seguimiento por WhatsApp</span>
