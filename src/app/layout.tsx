@@ -21,7 +21,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const viewport: Viewport = {
-  themeColor: '#0C0D0E',
+  themeColor: '#FF5E14',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -130,7 +130,6 @@ export default function RootLayout({
         logo: 'https://www.somosotam.com/images/otam-blanco.png',
         description:
           'Casa productora de experiencias de alto impacto y operadora de Grupo Orgánico Hoteles Boutique.',
-        email: 'artes.grupoorganico@gmail.com',
         telephone: '+525514615826',
         address: {
           '@type': 'PostalAddress',
@@ -157,11 +156,11 @@ export default function RootLayout({
   return (
     <html
       lang="es-MX"
-      className={`dark ${outfit.variable} ${plusJakartaSans.variable}`}
+      className={`${outfit.variable} ${plusJakartaSans.variable}`}
       suppressHydrationWarning
     >
       <body
-        className="min-h-screen bg-[#0C0D0E] text-[#F8FAFC] antialiased flex flex-col selection:bg-orange selection:text-white"
+        className="min-h-screen bg-[#FAF9F6] text-[#0C0D0E] antialiased flex flex-col selection:bg-orange selection:text-white"
         suppressHydrationWarning
       >
         <script

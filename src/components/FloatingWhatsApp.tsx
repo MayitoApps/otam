@@ -16,11 +16,11 @@ export default function FloatingWhatsApp() {
       
       {/* Tooltip informativo inicial */}
       {showTooltip && (
-        <div className="hidden sm:flex items-center gap-2 bg-[#121715]/95 border border-orange/30 text-ivory text-xs py-2.5 px-4 rounded-xl shadow-2xl backdrop-blur-md pointer-events-auto animate-fadeIn max-w-xs">
+        <div className="hidden sm:flex items-center gap-2 bg-white/95 border-2 border-orange/40 text-zinc-900 text-xs py-2.5 px-4 rounded-xl shadow-2xl backdrop-blur-md pointer-events-auto animate-fadeIn max-w-xs font-semibold">
           <span>¿Deseas cotizar una experiencia personalizada? Chatea con nosotros.</span>
           <button
             onClick={() => setShowTooltip(false)}
-            className="text-muted hover:text-white ml-1 p-0.5"
+            className="text-zinc-400 hover:text-black ml-1 p-0.5"
             aria-label="Cerrar notificación"
           >
             <X className="w-3.5 h-3.5" />

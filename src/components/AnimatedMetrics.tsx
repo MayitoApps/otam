@@ -140,12 +140,12 @@ export default function AnimatedMetrics() {
   return (
     <div
       ref={containerRef}
-      className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-12 border-t border-white/[0.08] mt-14 w-full max-w-5xl"
+      className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-12 border-t border-zinc-200 mt-14 w-full max-w-5xl"
     >
       {/* 1. SONRISAS */}
-      <div className="relative group p-4 sm:p-5 rounded-2xl bg-surface/70 border border-white/5 hover:border-orange/40 transition-all duration-300 hover:shadow-orange-card">
+      <div className="relative group p-4 sm:p-5 rounded-2xl bg-white border border-zinc-200/90 hover:border-orange transition-all duration-300 shadow-sm hover:shadow-orange-card">
         <div className="flex items-center justify-between mb-2">
-          <div className="p-2 rounded-xl bg-orange/15 border border-orange/30 group-hover:scale-110 transition-transform">
+          <div className="p-2 rounded-xl bg-orange/10 border border-orange/20 group-hover:scale-110 transition-transform">
             <Smile className="w-4 h-4 sm:w-5 sm:h-5 text-orange" />
           </div>
           <span className="flex h-2 w-2 relative">
@@ -156,10 +156,10 @@ export default function AnimatedMetrics() {
         <p className="text-2xl sm:text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange-light to-amber tracking-tight">
           +{counts.sonrisas.toLocaleString('es-MX')}
         </p>
-        <p className="text-[11px] sm:text-xs uppercase tracking-wider text-muted mt-1.5 font-bold leading-snug">
+        <p className="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-600 mt-1.5 font-extrabold leading-snug">
           Sonrisas & Conexiones
         </p>
-        <div className="w-full bg-white/5 h-1 rounded-full mt-3 overflow-hidden">
+        <div className="w-full bg-zinc-100 h-1.5 rounded-full mt-3 overflow-hidden">
           <div
             className="bg-gradient-to-r from-orange to-amber h-full transition-all duration-300"
             style={{ width: `${Math.min(100, (counts.sonrisas / 15000) * 100)}%` }}
@@ -168,22 +168,22 @@ export default function AnimatedMetrics() {
       </div>
 
       {/* 2. SEDES */}
-      <div className="relative group p-4 sm:p-5 rounded-2xl bg-surface/70 border border-white/5 hover:border-orange/40 transition-all duration-300 hover:shadow-orange-card">
+      <div className="relative group p-4 sm:p-5 rounded-2xl bg-white border border-zinc-200/90 hover:border-orange transition-all duration-300 shadow-sm hover:shadow-orange-card">
         <div className="flex items-center justify-between mb-2">
-          <div className="p-2 rounded-xl bg-orange/15 border border-orange/30 group-hover:scale-110 transition-transform">
+          <div className="p-2 rounded-xl bg-orange/10 border border-orange/20 group-hover:scale-110 transition-transform">
             <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-orange" />
           </div>
-          <span className="text-[10px] uppercase font-bold text-orange px-2 py-0.5 rounded-md bg-orange/10 border border-orange/20">
+          <span className="text-[10px] uppercase font-black text-orange px-2 py-0.5 rounded-md bg-orange/10 border border-orange/20">
             GOHB
           </span>
         </div>
         <p className="text-2xl sm:text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange-light to-amber tracking-tight">
           {counts.sedes} Sedes
         </p>
-        <p className="text-[11px] sm:text-xs uppercase tracking-wider text-muted mt-1.5 font-bold leading-snug">
+        <p className="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-600 mt-1.5 font-extrabold leading-snug">
           Hoteles Boutique Mágicos
         </p>
-        <div className="w-full bg-white/5 h-1 rounded-full mt-3 overflow-hidden">
+        <div className="w-full bg-zinc-100 h-1.5 rounded-full mt-3 overflow-hidden">
           <div
             className="bg-gradient-to-r from-orange to-amber h-full transition-all duration-300"
             style={{ width: `${(counts.sedes / 6) * 100}%` }}
@@ -192,22 +192,22 @@ export default function AnimatedMetrics() {
       </div>
 
       {/* 3. PRODUCCIÓN LLAVE EN MANO */}
-      <div className="relative group p-4 sm:p-5 rounded-2xl bg-surface/70 border border-white/5 hover:border-orange/40 transition-all duration-300 hover:shadow-orange-card">
+      <div className="relative group p-4 sm:p-5 rounded-2xl bg-white border border-zinc-200/90 hover:border-orange transition-all duration-300 shadow-sm hover:shadow-orange-card">
         <div className="flex items-center justify-between mb-2">
-          <div className="p-2 rounded-xl bg-orange/15 border border-orange/30 group-hover:scale-110 transition-transform">
+          <div className="p-2 rounded-xl bg-orange/10 border border-orange/20 group-hover:scale-110 transition-transform">
             <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-orange" />
           </div>
-          <span className="text-[10px] uppercase font-bold text-emerald-400 px-2 py-0.5 rounded-md bg-emerald-500/10 border border-emerald-500/20">
+          <span className="text-[10px] uppercase font-black text-emerald-600 px-2 py-0.5 rounded-md bg-emerald-50 border border-emerald-200">
             Total
           </span>
         </div>
         <p className="text-2xl sm:text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange-light to-amber tracking-tight">
           {counts.produccion}%
         </p>
-        <p className="text-[11px] sm:text-xs uppercase tracking-wider text-muted mt-1.5 font-bold leading-snug">
+        <p className="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-600 mt-1.5 font-extrabold leading-snug">
           Producción Llave en Mano
         </p>
-        <div className="w-full bg-white/5 h-1 rounded-full mt-3 overflow-hidden">
+        <div className="w-full bg-zinc-100 h-1.5 rounded-full mt-3 overflow-hidden">
           <div
             className="bg-gradient-to-r from-orange to-amber h-full transition-all duration-300"
             style={{ width: `${counts.produccion}%` }}
@@ -216,22 +216,22 @@ export default function AnimatedMetrics() {
       </div>
 
       {/* 4. CERO ABURRIMIENTO */}
-      <div className="relative group p-4 sm:p-5 rounded-2xl bg-surface/70 border border-white/5 hover:border-orange/40 transition-all duration-300 hover:shadow-orange-card">
+      <div className="relative group p-4 sm:p-5 rounded-2xl bg-white border border-zinc-200/90 hover:border-orange transition-all duration-300 shadow-sm hover:shadow-orange-card">
         <div className="flex items-center justify-between mb-2">
-          <div className="p-2 rounded-xl bg-orange/15 border border-orange/30 group-hover:scale-110 transition-transform">
+          <div className="p-2 rounded-xl bg-orange/10 border border-orange/20 group-hover:scale-110 transition-transform">
             <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-orange" />
           </div>
-          <span className="text-[10px] uppercase font-bold text-amber px-2 py-0.5 rounded-md bg-amber/10 border border-amber/20">
+          <span className="text-[10px] uppercase font-black text-amber-700 px-2 py-0.5 rounded-md bg-amber-50 border border-amber-200">
             Garantía
           </span>
         </div>
         <p className="text-2xl sm:text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange-light to-amber tracking-tight">
           {counts.aburrimiento}%
         </p>
-        <p className="text-[11px] sm:text-xs uppercase tracking-wider text-muted mt-1.5 font-bold leading-snug">
+        <p className="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-600 mt-1.5 font-extrabold leading-snug">
           Aburrimiento Garantizado
         </p>
-        <div className="w-full bg-white/5 h-1 rounded-full mt-3 overflow-hidden">
+        <div className="w-full bg-zinc-100 h-1.5 rounded-full mt-3 overflow-hidden">
           <div
             className="bg-gradient-to-r from-amber to-orange h-full transition-all duration-300"
             style={{ width: '100%' }}

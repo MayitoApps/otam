@@ -34,23 +34,23 @@ export default function MomentosPage() {
   };
 
   return (
-    <div className="pt-28 pb-24 bg-[#0C0D0E] min-h-screen">
+    <div className="pt-28 pb-24 bg-[#FAF9F6] min-h-screen text-[#0C0D0E]">
       
       {/* Header Dinámico y Divertido */}
-      <section className="relative py-14 sm:py-20 text-center overflow-hidden fun-grid-bg border-b border-white/[0.06]">
+      <section className="relative py-14 sm:py-20 text-center overflow-hidden fun-grid-bg border-b border-zinc-200/80 bg-gradient-to-b from-[#FFFDF9] via-white to-[#FAF9F6]">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-orange/15 rounded-full blur-[130px] pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange/10 border border-orange/30 text-orange text-xs uppercase tracking-wider font-extrabold mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange/10 border border-orange/30 text-orange text-xs uppercase tracking-wider font-extrabold mb-5 shadow-sm">
             <span>✨</span>
             <span>Experiencias Sociales, Románticas & Aventura</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-white uppercase tracking-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-black uppercase tracking-tight mb-4">
             Momentos Que Te Vuelan la Cabeza
           </h1>
 
-          <p className="text-muted text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-zinc-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
             Una cena romántica secreta con mayordomo, fogatadas con bombones bajo las estrellas, tiro con arco o una parrillada épica con amigos. Tú pones la fecha, nosotros la magia.
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function MomentosPage() {
                 className={`inline-flex items-center gap-2 px-5 py-3 rounded-2xl text-xs uppercase tracking-wider font-extrabold transition-all duration-300 cursor-pointer ${
                   isActive
                     ? 'bg-gradient-to-r from-orange to-orange-dark text-white shadow-orange-glow scale-105'
-                    : 'bg-surface text-muted hover:text-white hover:bg-surface-light border border-white/10'
+                    : 'bg-white text-zinc-700 hover:text-black hover:border-orange hover:bg-orange/5 border border-zinc-200/90 shadow-sm'
                 }`}
               >
                 <span>{cat.emoji}</span>

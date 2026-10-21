@@ -13,20 +13,20 @@ export default function OrganicoUniverseVideo() {
   )}`;
 
   return (
-    <section className="relative py-20 sm:py-28 bg-[#0C0D0E] overflow-hidden">
+    <section className="relative py-20 sm:py-28 bg-[#FFFDF9] border-t border-zinc-200/80 overflow-hidden">
       {/* Decorative ambient background with warm orange glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[550px] bg-orange/[0.09] rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[550px] bg-orange/[0.12] rounded-full blur-[150px] pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8">
         
         {/* TÍTULO ARRIBA DEL VIDEO */}
         <div className="text-center mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange/10 border border-orange/30 text-orange text-xs uppercase tracking-widest font-extrabold mb-4 shadow-sm">
-            <Sparkles className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange/10 border border-orange/30 text-orange text-xs uppercase tracking-widest font-black mb-4 shadow-sm">
+            <Sparkles className="w-3.5 h-3.5 text-orange" />
             <span>Alianza Oficial & Operadora Exclusiva</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-display font-black text-white tracking-tight uppercase max-w-4xl mx-auto leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-display font-black text-black tracking-tight uppercase max-w-4xl mx-auto leading-tight">
             DESCUBRE EL UNIVERSO DE GRUPO ORGÁNICO HOTELES BOUTIQUE
           </h2>
           
@@ -34,12 +34,12 @@ export default function OrganicoUniverseVideo() {
         </div>
 
         {/* CONTENEDOR DEL VIDEO (MÁXIMA CALIDAD, MÍNIMOS BOTONES) */}
-        <div className="relative aspect-video w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-orange/20 shadow-2xl shadow-orange/10 bg-black/80 group">
+        <div className="relative aspect-video w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-orange/40 shadow-2xl shadow-orange/15 bg-black group">
           {!isPlaying ? (
             <div className="absolute inset-0 flex items-center justify-center">
               {/* Background poster preview image */}
               <div 
-                className="absolute inset-0 bg-cover bg-center brightness-[0.6] transition-transform duration-700 group-hover:scale-105"
+                className="absolute inset-0 bg-cover bg-center brightness-[0.7] transition-transform duration-700 group-hover:scale-105"
                 style={{
                   backgroundImage: `url('/images/sedes/ajusco.jpg')`
                 }}
@@ -58,7 +58,7 @@ export default function OrganicoUniverseVideo() {
                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-r from-orange to-orange-dark text-white flex items-center justify-center shadow-orange-glow transition-all duration-300 group-hover/btn:scale-110 group-hover/btn:brightness-110">
                   <Play className="w-8 h-8 sm:w-10 sm:h-10 fill-current translate-x-0.5 text-white" />
                 </div>
-                <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-black/60 px-4 py-1.5 rounded-full border border-white/10 group-hover/btn:border-orange/60 transition-colors">
+                <span className="text-xs sm:text-sm font-black tracking-widest uppercase text-white bg-black/75 px-5 py-2 rounded-full border border-white/20 group-hover/btn:border-orange/60 transition-colors shadow-lg">
                   ▶ Reproducir Video Oficial
                 </span>
               </button>
@@ -77,59 +77,59 @@ export default function OrganicoUniverseVideo() {
         {/* TEXTO ENFOCADO A VENTA: VIVE TUS EVENTOS EN CUALQUIERA DE LAS 6 PROPIEDADES */}
         <div className="mt-14 sm:mt-18 max-w-4xl mx-auto text-center space-y-6">
           
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange/10 border border-orange/20 text-orange text-[11px] uppercase tracking-wider font-extrabold">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange/10 border border-orange/20 text-orange text-[11px] uppercase tracking-wider font-black">
             <span>6 Destinos Únicos · Un Solo Proveedor Integral</span>
           </div>
 
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-white tracking-tight uppercase leading-snug">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-black tracking-tight uppercase leading-snug">
             Tus eventos y experiencias se pueden vivir en{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange-light to-amber">
               cualquiera de nuestras 6 propiedades
             </span>
           </h3>
 
-          <p className="text-sm sm:text-base md:text-lg text-muted max-w-3xl mx-auto leading-relaxed">
-            No te conformes con un salón de hotel convencional. En <strong className="text-white">OTAM</strong>, como productora y operadora oficial de <strong className="text-white">Grupo Orgánico Hoteles Boutique</strong>, diseñamos y producimos retiros corporativos, team building de alto impacto, convenciones anuales, bodas y fiestas privadas en el escenario que mejor resuene con la personalidad de tu grupo.
+          <p className="text-sm sm:text-base md:text-lg text-zinc-700 max-w-3xl mx-auto leading-relaxed">
+            No te conformes con un salón de hotel convencional. En <strong className="text-black font-extrabold">OTAM</strong>, como productora y operadora oficial de <strong className="text-black font-extrabold">Grupo Orgánico Hoteles Boutique</strong>, diseñamos y producimos retiros corporativos, team building de alto impacto, convenciones anuales, bodas y fiestas privadas en el escenario que mejor resuene con la personalidad de tu grupo.
           </p>
 
-          <p className="text-sm sm:text-base text-white/90 max-w-3xl mx-auto font-medium">
+          <p className="text-sm sm:text-base text-zinc-800 max-w-3xl mx-auto font-medium">
             Tú eliges el destino; nosotros nos encargamos de todo: salones equipados, auditorios acústicos, hospedaje boutique, banquetería de autor, logística de transporte y dinámicas inolvidables.
           </p>
 
           {/* BENEFICIOS DE VENTA CLAVE (BUYOUT, INFRAESTRUCTURA, LLAVE EN MANO) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 text-left">
-            <div className="p-5 rounded-2xl bg-surface border border-white/10 hover:border-orange/40 transition-colors">
-              <div className="w-10 h-10 rounded-xl bg-orange/15 border border-orange/30 flex items-center justify-center text-orange mb-3">
+            <div className="p-5 rounded-2xl bg-white border border-zinc-200/90 hover:border-orange transition-all shadow-sm hover:shadow-md">
+              <div className="w-10 h-10 rounded-xl bg-orange/10 border border-orange/20 flex items-center justify-center text-orange mb-3">
                 <Crown className="w-5 h-5 text-orange" />
               </div>
-              <h4 className="text-white font-display font-extrabold text-sm uppercase tracking-wide mb-1">
+              <h4 className="text-black font-display font-black text-sm uppercase tracking-wide mb-1">
                 Bloqueo Exclusivo (Buyout)
               </h4>
-              <p className="text-xs text-muted leading-relaxed">
+              <p className="text-xs text-zinc-600 leading-relaxed">
                 Reserva la propiedad completa para tu empresa o grupo. 100% de confidencialidad, privacidad total y cero huéspedes ajenos.
               </p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-surface border border-white/10 hover:border-orange/40 transition-colors">
-              <div className="w-10 h-10 rounded-xl bg-orange/15 border border-orange/30 flex items-center justify-center text-orange mb-3">
+            <div className="p-5 rounded-2xl bg-white border border-zinc-200/90 hover:border-orange transition-all shadow-sm hover:shadow-md">
+              <div className="w-10 h-10 rounded-xl bg-orange/10 border border-orange/20 flex items-center justify-center text-orange mb-3">
                 <Building2 className="w-5 h-5 text-orange" />
               </div>
-              <h4 className="text-white font-display font-display font-extrabold text-sm uppercase tracking-wide mb-1">
+              <h4 className="text-black font-display font-black text-sm uppercase tracking-wide mb-1">
                 Espacios para Cada Formato
               </h4>
-              <p className="text-xs text-muted leading-relaxed">
+              <p className="text-xs text-zinc-600 leading-relaxed">
                 Auditorios de hasta 150 personas, más de 20 salones ejecutivos, terrazas panorámicas, hectáreas de bosque y playas privadas.
               </p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-surface border border-white/10 hover:border-orange/40 transition-colors">
-              <div className="w-10 h-10 rounded-xl bg-orange/15 border border-orange/30 flex items-center justify-center text-orange mb-3">
+            <div className="p-5 rounded-2xl bg-white border border-zinc-200/90 hover:border-orange transition-all shadow-sm hover:shadow-md">
+              <div className="w-10 h-10 rounded-xl bg-orange/10 border border-orange/20 flex items-center justify-center text-orange mb-3">
                 <ShieldCheck className="w-5 h-5 text-orange" />
               </div>
-              <h4 className="text-white font-display font-extrabold text-sm uppercase tracking-wide mb-1">
+              <h4 className="text-black font-display font-black text-sm uppercase tracking-wide mb-1">
                 Producción Llave en Mano
               </h4>
-              <p className="text-xs text-muted leading-relaxed">
+              <p className="text-xs text-zinc-600 leading-relaxed">
                 Audio, pantallas, mobiliario temático, maridajes de autor y dinámicas guiadas. Solo llegas a disfrutar; nosotros operamos todo.
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function OrganicoUniverseVideo() {
           {/* DÓNDE ESTÁN LAS 6 PROPIEDADES (DETALLE DE VENTAS) */}
           <div className="pt-8">
             <div className="text-center mb-6">
-              <span className="text-xs uppercase tracking-widest text-orange font-extrabold">
+              <span className="text-xs uppercase tracking-widest text-orange font-black">
                 📍 Ubicaciones Estratégicas Disponibles para tu Evento
               </span>
             </div>
@@ -147,18 +147,18 @@ export default function OrganicoUniverseVideo() {
               {GRUPO_ORGANICO_INFO.salesPitch.destinationsSummary.map((dest, i) => (
                 <div
                   key={i}
-                  className="p-4 sm:p-5 rounded-2xl bg-surface/80 border border-white/10 hover:border-orange/50 transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                  className="p-4 sm:p-5 rounded-2xl bg-white border border-zinc-200/90 hover:border-orange transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="text-xs font-bold text-orange px-2.5 py-0.5 rounded-md bg-orange/10 border border-orange/20">
+                    <span className="text-xs font-black text-orange px-2.5 py-0.5 rounded-md bg-orange/10 border border-orange/20">
                       {dest.badge}
                     </span>
-                    <MapPin className="w-3.5 h-3.5 text-muted flex-shrink-0" />
+                    <MapPin className="w-3.5 h-3.5 text-zinc-400 flex-shrink-0" />
                   </div>
-                  <h4 className="text-white font-display font-extrabold text-sm tracking-tight mb-1.5">
+                  <h4 className="text-black font-display font-black text-sm tracking-tight mb-1.5">
                     {dest.name}
                   </h4>
-                  <p className="text-xs text-muted leading-relaxed">
+                  <p className="text-xs text-zinc-600 leading-relaxed">
                     {dest.desc}
                   </p>
                 </div>
@@ -181,7 +181,7 @@ export default function OrganicoUniverseVideo() {
 
             <Link
               href="/sedes"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface hover:bg-surface-light border border-white/15 hover:border-orange/60 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider py-4 px-8 rounded-2xl transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-black hover:bg-zinc-800 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider py-4 px-8 rounded-2xl transition-all shadow-md"
             >
               <span>VER ESPACIOS, SALONES Y AUDITORIOS</span>
               <ArrowRight className="w-4 h-4 text-orange" />
@@ -191,7 +191,7 @@ export default function OrganicoUniverseVideo() {
               href={GRUPO_ORGANICO_INFO.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-bold text-muted hover:text-white py-3 px-4 transition-colors"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-bold text-zinc-700 hover:text-orange py-3 px-4 transition-colors"
             >
               <span>Sitio Grupo Orgánico</span>
               <ExternalLink className="w-3.5 h-3.5" />
